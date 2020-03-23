@@ -23,6 +23,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\AccountEntrySortTypeCodeType $AccountEntrySortType
  * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
  * @property string $ItemID
+ * @property \DTS\eBaySDK\Trading\Types\OrderIDArrayType $OrderIDArray
  */
 class GetAccountRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
 {
@@ -95,7 +96,13 @@ class GetAccountRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestTy
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemID'
-        ]
+        ],
+        'OrderIDArray' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\OrderIDArrayType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'OrderIDArray'
+        ],
     ];
 
     /**

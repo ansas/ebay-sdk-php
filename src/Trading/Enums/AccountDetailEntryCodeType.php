@@ -305,4 +305,8 @@ class AccountDetailEntryCodeType
     const C_VEHICLE_LOCAL_INSERTION_FEE_CREDIT = 'VehicleLocalInsertionFeeCredit';
     const C_VEHICLE_LOCAL_SUBSCRIPTION_FEE = 'VehicleLocalSubscriptionFee';
     const C_VEHICLE_LOCAL_SUBSCRIPTION_FEE_CREDIT = 'VehicleLocalSubscriptionFeeCredit';
+    const C_PER_LISTING_PAYMENTS_FEE = 'PerListingPaymentsFee';
+    const C_PER_LISTING_PAYMENTS_FEE_CREDIT = 'PerListingPaymentsFeeCredit';
+    const C_PAYMENT_INTERMEDIATION_FEE = 'PaymentIntermediationFee';
+    const C_PAYMENT_INTERMEDIATION_FEE_CREDIT = 'PaymentIntermediationFeeCredit';
 }
