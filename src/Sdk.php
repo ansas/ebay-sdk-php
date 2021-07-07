@@ -27,6 +27,7 @@ namespace DTS\eBaySDK;
  * @method \DTS\eBaySDK\ReturnManagement\Services\ReturnManagementService createReturnManagement(array $args = [])
  * @method \DTS\eBaySDK\Shopping\Services\ShoppingService createShopping(array $args = [])
  * @method \DTS\eBaySDK\Trading\Services\TradingService createTrading(array $args = [])
+ * @method \DTS\eBaySDK\Taxonomy\Services\TaxonomyService createTaxonomy(array $args = [])
  */
 class Sdk
 {
