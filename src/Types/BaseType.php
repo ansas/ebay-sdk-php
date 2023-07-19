@@ -589,6 +589,8 @@ class BaseType implements JmesPathableObjectInterface
             return $value->format('Y-m-d\TH:i:s.000\Z');
         } elseif (is_bool($value)) {
             return $value ? 'true' : 'false';
+        } elseif (is_string($value) && str_starts_with($value, '<![CDATA[')) {
+            return $value;
         } else {
             return htmlspecialchars($value, ENT_QUOTES, 'UTF-8', true);
         }
