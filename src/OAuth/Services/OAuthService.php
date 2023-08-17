@@ -189,6 +189,10 @@ class OAuthService
 
         ];
 
+        if (isset($params['prompt'])) {
+            $urlParams['prompt'] = $params['prompt'];
+        }
+
         return $url.http_build_query($urlParams, null, '&', PHP_QUERY_RFC3986);
     }
 
