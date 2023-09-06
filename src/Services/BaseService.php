@@ -275,13 +275,22 @@ abstract class BaseService
      */
     protected function buildMultipartFormDataFilePayload($name, $attachment)
     {
+        // Fixed name is set as param PictureName (given by caller of this method) MUST NOT be used to prevent eBay errors
+        $name = 'upload';
+
+        // make sure binary data is sent
+        $data = $attachment['data'];
+        if ($data === base64_encode(base64_decode($data, true))) {
+            $data = base64_decode($data, true);
+        }
+
         return sprintf(
             '%s%s%s%s%s',
             '--boundary'.self::CRLF,
-            'Content-Disposition: form-data; name="'.$name.'"; filename="picture"'.self::CRLF,
+            'Content-Disposition: form-data; name="'.$name.'"; filename="'.$name.'"'.self::CRLF,
             'Content-Type: '.$attachment['mimeType'].self::CRLF.self::CRLF,
-            $attachment['data'].self::CRLF,
-            '--boundary--'
+            $data.self::CRLF,
+            '--boundary--'.self::CRLF
         );
     }
 

@@ -26,7 +26,7 @@ class UploadSiteHostedPicturesRequestType extends \DTS\eBaySDK\Trading\Types\Abs
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'PictureName' => [
+        'PictureName' => [ // MUST NOT be used as eBay returns errors if set
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
