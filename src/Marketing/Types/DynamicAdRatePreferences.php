@@ -11,40 +11,26 @@
 namespace DTS\eBaySDK\Marketing\Types;
 
 /**
- * @property \DTS\eBaySDK\Marketing\Enums\AdRateStrategyEnum $adRateStrategy
- * @property string $bidPercentage
- * @property \DTS\eBaySDK\Marketing\Enums\FundingModelEnum $fundingModel
- * @property \DTS\eBaySDK\Marketing\Types\DynamicAdRatePreferences[] $dynamicAdRatePreferences
+ * @property string $adRateAdjustmentPercent
+ * @property string $adRateCapPercent
  */
-class FundingStrategy extends \DTS\eBaySDK\Types\BaseType
+class DynamicAdRatePreferences extends \DTS\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'adRateStrategy'           => [
+        'adRateAdjustmentPercent' => [
             'type'        => 'string',
             'repeatable'  => false,
             'attribute'   => false,
-            'elementName' => 'adRateStrategy',
+            'elementName' => 'adRateAdjustmentPercent',
         ],
-        'bidPercentage'            => [
+        'adRateCapPercent'        => [
             'type'        => 'string',
             'repeatable'  => false,
             'attribute'   => false,
-            'elementName' => 'bidPercentage',
-        ],
-        'fundingModel'             => [
-            'type'        => 'string',
-            'repeatable'  => false,
-            'attribute'   => false,
-            'elementName' => 'fundingModel',
-        ],
-        'dynamicAdRatePreferences' => [
-            'type'        => 'DTS\eBaySDK\Marketing\Types\DynamicAdRatePreferences',
-            'repeatable'  => true,
-            'attribute'   => false,
-            'elementName' => 'dynamicAdRatePreferences',
+            'elementName' => 'adRateCapPercent',
         ],
     ];
 
