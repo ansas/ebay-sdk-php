@@ -170,6 +170,12 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'price'
         ],
+        'priorityListing' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'priorityListing'
+        ],
         'seller' => [
             'type' => 'DTS\eBaySDK\Browse\Types\Seller',
             'repeatable' => false,
