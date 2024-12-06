@@ -150,6 +150,9 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $eBayPlus
  * @property boolean $eBayPlusEligible
  * @property boolean $eMailDeliveryAvailable
+ *
+ * preigu added
+ * @property \DTS\eBaySDK\MerchantData\Types\Regulatory $Regulatory
  */
 class ItemType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -984,7 +987,14 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eMailDeliveryAvailable'
-        ]
+        ],
+        // preigu added
+        'Regulatory' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\Regulatory',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Regulatory'
+        ],
     ];
 
     /**
