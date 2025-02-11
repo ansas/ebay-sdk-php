@@ -18,7 +18,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "guzzlehttp/guzzle": "^6.0 || ^7.0",
-        "guzzlehttp/psr7": "^1.0",
+        "guzzlehttp/psr7": "^2.7",
         "guzzlehttp/promises": "^1.1"
     },
     "require-dev": {
